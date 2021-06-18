@@ -1,0 +1,90 @@
+@keyframes SlideBottomToTop {
+    0% {
+        transform: translateY(15%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+body {
+    animation: 3s ease-in 0s 1 SlideBottomToTop;
+    background-color: white;
+    opacity: 1;
+    background-image:
+    linear-gradient(135deg, #eeeeee 25%, transparent 25%),
+    linear-gradient(225deg, #eeeeee 25%, transparent 25%),
+    linear-gradient(45deg, #eeeeee 25%, transparent 25%),
+    linear-gradient(315deg, #eeeeee 25%, #ffffff 25%);
+    background-position: 4px 0, 4px 0, 0 0, 0 0;
+    background-size: 4px 4px;
+    background-repeat: repeat;
+}
+
+.heading {
+    text-align: center;
+    color: darkorange;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 25px 0 30px 0;
+    background-color: transparent;
+}
+
+.sub-heading {
+    text-align: center;
+    color: slateblue;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    background-color: transparent;
+}
+
+.form-content {
+    padding: 60px 10% 40px 10%;
+    border: none;
+    background-color: transparent;
+}
+
+label {
+    color: teal;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 0;
+    width: 100%;
+}
+
+input, select {
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.1rem solid teal;
+    border-radius: 0;
+    outline: none;
+    width: 100%;
+    color: teal;
+    font-size: 18px;
+    margin: 15px 0 30px 0;
+    padding: 0;
+}
+
+.row {
+    display: none;
+}
+
+::placeholder {
+    color: teal;
+}
+
+#btn {
+    margin: 30px 0 30px 0;
+    text-align: center;
+}
+
+#predictBtn {
+    border: none;
+    padding: 10px;
+    width: 150px;
+    cursor: pointer;
+    background: #568203;
+    color: white;
+}

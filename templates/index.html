@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Diabetes Prediction System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="../static/css/index.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">Diabetes Prediction System</div>
+        <div class="sub-heading">Predict the probability of having Diabetes</div>
+        <div class="form-content">
+            <form id="home" action="javascript:void(0);" method="post">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="sub-heading" style="color:brown;">PERSONAL DETAILS</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Gender</label><br>
+                        <select name="v2" required>
+                            <option selected disabled value="">Select your gender</option>
+                            <option value="1">Male</option>
+                            <option value="0">Female</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Age</label><br>
+                        <input type="number" name="v1" placeholder="Enter your age (years)" min="5" max="100"
+                            required />
+                    </div>
+                    <div class="col-md-6">
+                        <label>Height</label><br>
+                        <input type="number" name="height" placeholder="Enter your height (meters)" min="0.5" max="2.5"
+                            step="0.01" required />
+                    </div>
+                    <div class="col-md-6">
+                        <label>Weight</label><br>
+                        <input type="number" name="weight" placeholder="Enter your weight (kilograms)" min="10"
+                            max="150" required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="sub-heading" style="color:brown;">QUESTIONNAIRE SECTION</div>
+                    </div>
+                    <div class="col-md-4">
+                        <label>Excessive urination?</label><br>
+                        <select name="v3" required>
+                            <option selected disabled value="">--Select--</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label>Excessive thirst?</label><br>
+                        <select name="v4" required>
+                            <option selected disabled value="">--Select--</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label>Excessive eating?</label><br>
+                        <select name="v7" required>
+                            <option selected disabled value="">--Select--</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12">
+                        <label>Lost more than 4 kg weight within 6 to 12 months unintentionally?
+                        </label><br>
+                        <select name="v5" required>
+                            <option selected disabled value="">--Select--</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label>Physical weakness?</label><br>
+                        <select name="v6" required>
+                            <option selected disabled value="">--Select--</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label>Blurred vision?</label><br>
+                        <select name="v9" required>
+                            <option selected disabled value="">--Select--</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label>Itching problem?</label><br>
+                        <select name="v10" required>
+                            <option selected disabled value="">--Select--</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12">
+                        <label>Feeling frustrated or angry, often over seemingly small matters?</label><br>
+                        <select name="v11" required>
+                            <option selected disabled value="">--Select--</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12">
+                        <label>Taking longer time for a wound to heal than normal?</label><br>
+                        <select name="v12" required>
+                            <option selected disabled value="">--Select--</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label>Partial paresis?</label><br>
+                        <select name="v13" required>
+                            <option selected disabled value="">--Select--</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label>Muscle stiffness?</label><br>
+                        <select name="v14" required>
+                            <option selected disabled value="">--Select--</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label>Sudden hair loss?</label><br>
+                        <select name="v15" required>
+                            <option selected disabled value="">--Select--</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12">
+                        <label>Felling irritation, burning and redness around the genital area?</label><br>
+                        <select name="v8" required>
+                            <option selected disabled value="">--Select--</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="btn" class="col-md-12">
+                    <button type="submit" id="predictBtn" onclick="nextRow(1)">Next</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../static/js/index.js"></script>
+</body>
+
+</html>
